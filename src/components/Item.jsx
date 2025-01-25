@@ -9,7 +9,7 @@ const Item = ({ offer }) => {
           />
         ) : (
           <img
-            src="src/assets/img/Favicon.png"
+            src="/src/assets/img/Favicon.png"
             alt={offer.owner.account.username}
           />
         )}
