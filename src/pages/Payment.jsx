@@ -18,15 +18,9 @@ const Payment = ({ token }) => {
   //   console.log(price);
   const feesProtect = 0.4;
   const feesDelivery = 0.8;
-  const valueTotal = Number(feesDelivery + feesProtect + price).toFixed(2);
+  const valueTotal = feesDelivery + feesProtect + Number(price);
 
-  const options = {
-    mode: "payment",
-    amount: price,
-    currency: "eur",
-  };
-
-  console.log(options);
+  const options = { currency: "eur" };
 
   return token ? (
     <main className="payment-container">

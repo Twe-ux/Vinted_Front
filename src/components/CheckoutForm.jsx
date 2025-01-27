@@ -28,8 +28,8 @@ const CheckoutForm = () => {
         return;
       }
       const response = await axios.post(
-        "http://localhost:3000/payment"
-        // "https://site--vintedback--qjy84vpdjsjt.code.run/payment"
+        // "http://localhost:3000/payment"
+        "https://site--vintedback--qjy84vpdjsjt.code.run/payment"
       );
       // console.log(response.data);
 
